@@ -1,0 +1,2148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--white-97, #F7F7F8);
+    /* height: 4000px; */
+}
+
+.container{
+    width: calc(100% - 322px);
+    margin: auto;
+    /* background-color: red; */
+}
+
+.row{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+header{
+    position: sticky;
+    z-index: 9;
+    top: 0;
+    padding: 20px 0 24px 0;
+    background-color: #FFF;
+}
+
+header nav ul{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 26px;
+    align-items: center;
+}
+
+nav a{
+    color: var(--grey-15, #262626);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+}
+
+.left-side .logo{
+    display: flex;
+    width: calc((100% -50px) / 2);
+    height: 54px;
+    padding: 7px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--orange-50, #FF9500);
+}
+
+/* header .left-side{
+    flex-grow: 1;
+   
+} */
+
+header .left-side .row{
+    gap: 50px;
+}
+
+header .row{
+    justify-content: space-between;
+}
+
+.left-side .nav{
+    flex-grow: 1;
+}
+
+.nav .first-item{
+    display: flex;
+    padding: 14px 24px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: var(--white-95, #F1F1F3);
+}
+
+header .Button{
+    gap: 30px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    
+}
+
+header .Button a:first-of-type{
+    color: var(--grey-15, #262626);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    line-height: 150%; /* 27px */
+    width: calc((100% - 30px) / 2);
+}
+
+header .Button a:last-of-type{
+    color: white;
+    color: var(--absolute-white, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    display: flex;
+    padding: 14px 34px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: var(--orange-50, #FF9500);
+    width: calc((100% - 30px) / 2);
+}
+
+header .right-side svg{
+    display: none;
+    visibility: hidden;
+}
+
+main .Hero-Section{
+    margin: auto;
+    width: calc(100% - 630px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 100px;
+    padding-top: 210px;
+}
+
+.Hero-Section .Hero-Top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.Hero-Top .Sub-Container{
+    position: relative;
+    display: flex;
+    padding: 14px 30px 14px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 11px;
+    border: 1px solid var(--white-95, #F1F1F3);
+    background: var(--white-99, #FCFCFD);
+}
+
+.Sub-Container h1{
+    color: var(--grey-10, #1A1A1A);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+
+.Sub-Container h1 span{
+    color: var(--orange-50, #FF9500);
+}
+
+.Sub-Container .Abstract-Line {
+    position: absolute;
+    left: -24px;
+    top: -30px;
+    width: 39px;
+    height: 43px;
+}
+
+.Sub-Container .icon-container{
+    display: flex;
+    padding: 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: var(--orange-95, #FFF4E5);
+}
+
+.Hero-Top .Text-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.Text-Container h1{
+    color: var(--grey-15, #262626);
+    text-align: center;
+    /* font-family: Be Vietnam Pro; */
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 57px */
+}
+
+.Text-Container p{
+    color: var(--grey-15, #262626);
+    text-align: center;
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+}
+
+.Hero-Button{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.Hero-Button .Button1{
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: var(--orange-50, #FF9500);
+}
+
+.Button1 a{
+    color: var(--absolute-white, #FFF);
+    text-align: center;
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 27px */
+}
+
+.Hero-Button .Button2{
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--white-95, #F1F1F3);
+    background: var(--absolute-white, #FFF);
+}
+
+.Button2 a{
+    color: var(--grey-15, #262626);
+    text-align: center;
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+}
+
+.cards .row{
+    border-radius: 12px;
+    border: 1px solid var(--white-95, #F1F1F3);
+    background: var(--white-99, #FCFCFD);
+    padding: 30px;
+    align-items: flex-start;
+}
+
+.cards .card{
+    display: flex;
+    padding: 30px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex: 1 0 0;
+    border-right: 1px solid #F1F1F3;
+}
+
+.cards .card:last-of-type{
+    border-right: none;
+}
+
+.cards .card svg{
+    width: 68px;
+    height: 34px;
+}
+
+/* .cards .line{
+    width: 1px;
+    height: 94px;
+    background: #F1F1F3;
+} */
+
+main .photo{
+    padding-bottom: 150px;
+    padding-top: 100px;
+}
+
+.photo .container{
+    position: relative;
+    display: flex;
+    height: 790px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 16px solid var(--White-97, #F7F7F8);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url('../image/image.png'), lightgray 50% / cover no-repeat; 
+}
+
+.photo .container .Button{
+    position: absolute;
+    display: flex;
+    padding: 14px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 68px;
+    border: 6px solid rgba(255, 255, 255, 0.30);
+    background: rgba(255, 255, 255, 0.20);
+}
+
+.photo .container .Button svg{
+    width: 44px;
+    height: 44px;
+}
+
+.Benefits .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+    align-self: stretch;
+}
+
+.Benefits .Benefits-Top .row{
+    gap: 300px;
+    align-items: flex-end;
+    align-self: stretch;
+}
+
+.Benefits-Top .Text{
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    /* flex-grow: 1; */
+}
+
+.Benefits-Top .Text h4{
+    color: var(--Grey-15, #262626);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 72px */
+    align-self: stretch;
+}
+
+.Benefits-Top .Text p{
+    color: var(--Grey-35, #59595A);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    align-self: stretch;
+    
+}
+
+.Benefits-Top .Button{
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--White-99, #FCFCFD);
+}
+
+.Benefits-Top .Button a{
+    color: var(--Grey-15, #262626);
+    text-align: center;
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+}
+
+.Benefits .Benefits-buttom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.Benefits .Benefits-buttom .row{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.Benefits-buttom .card{
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 50px;
+    flex: 1 0 0;
+    border-radius: 12px;
+    background: var(--Absolute-White, #FFF);
+}
+
+.Benefits-buttom .card h2{
+    color: var(--Grey-15, #262626);
+    text-align: right;
+    /* font-family: Be Vietnam Pro; */
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 30% */
+}
+
+.Benefits-buttom .card .Text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    align-self: stretch;
+}
+
+.Benefits-buttom .card .Text h3{
+    color: var(--Grey-20, #333);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+    letter-spacing: -0.144px;
+    align-self: stretch;
+} 
+
+.Benefits-buttom .card .Text p{
+    color: var(--Grey-30, #4C4C4D);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    align-self: stretch;
+    line-height: 150%; /* 27px */
+}
+
+.Benefits-buttom .card .Button{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--White-99, #FCFCFD);
+}
+
+.Courses{
+    padding-top: 100px;
+    padding-bottom: 108px;
+}
+
+.Courses .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+    align-self: stretch;
+}
+
+.Courses .Courses-Top-Section .row{
+    gap: 300px;
+    align-items: flex-end;
+    align-self: stretch;
+}
+
+.Courses-Top-Section .Text{
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    /* flex-grow: 1; */
+}
+
+.Courses-Top-Section .Text h4{
+    color: var(--Grey-15, #262626);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 72px */
+    align-self: stretch;
+}
+
+.Courses-Top-Section .Text p{
+    color: var(--Grey-35, #59595A);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    align-self: stretch;
+    
+}
+
+.Courses-Top-Section .Button{
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--White-99, #FCFCFD);
+}
+
+.Courses-Top-Section .Button a{
+    color: var(--Grey-15, #262626);
+    text-align: center;
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+}
+
+.Courses .Courses-Bottom-Section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.Courses-Bottom-Section .row{
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.Courses-Bottom-Section .card{
+    width: calc((100% - 30px) / 2);
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 30px;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--Absolute-White, #FFF);
+}
+
+.Courses-Bottom-Section .card1{
+    width: calc((100% - 30px) / 2);
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 30px; */
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--Absolute-White, #FFF);
+}
+
+.Courses-Bottom-Section .card .Top{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.Courses-Bottom-Section .card .Top .image{
+    height: 380px;
+    align-self: stretch;
+    border-radius: 8px;
+}
+
+.Courses-Bottom-Section .card .Top img{
+    width: 100%;
+    height: 380px;
+}
+
+.Courses-Bottom-Section .card1 .Top{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.Courses-Bottom-Section .card1 .Top .image{
+    height: 380px;
+    align-self: stretch;
+    border-radius: 8px;
+}
+
+.Courses-Bottom-Section .card1 .Top img{
+    width: 100%;
+    height: 380px;
+}
+
+.Courses-Bottom-Section .Sub-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.Courses-Bottom-Section .Sub-Container .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.Courses-Bottom-Section .Sub-Container .row .right-side{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.Courses-Bottom-Section .Sub-Container .right-side .part{
+    display: flex;
+    padding: 10px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--Absolute-White, #FFF);
+}
+
+.Courses-Bottom-Section .part span{
+    color: var(--Grey-30, #4C4C4D);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Courses-Bottom-Section .Sub-Container .left-side span{
+    color: var(--Grey-15, #262626);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Courses-Bottom-Section .Sub-Container .Text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    align-self: stretch;
+}
+
+.Courses-Bottom-Section .Sub-Container .Text h5{
+    color: var(--Grey-15, #262626);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+    align-self: stretch;
+}
+
+.Courses-Bottom-Section .Sub-Container .Text p{
+    align-self: stretch;
+    color: var(--Grey-30, #4C4C4D);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+}
+
+.Courses-Bottom-Section .Button{
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--White-97, #F7F7F8);
+}
+
+.Courses-Bottom-Section .Button a{
+    color: var(--Grey-15, #262626);
+    text-align: center;
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+}
+
+.Testimonials .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+    align-self: stretch;
+}
+
+.Testimonials .Testimonials-Top .row{
+    gap: 300px;
+    align-items: flex-end;
+    align-self: stretch;
+}
+
+.Testimonials-Top .Text{
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    /* flex-grow: 1; */
+}
+
+.Testimonials-Top .Text h4{
+    color: var(--Grey-15, #262626);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 72px */
+    align-self: stretch;
+}
+
+.Testimonials-Top .Text p{
+    color: var(--Grey-35, #59595A);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    align-self: stretch;
+    
+}
+
+.Testimonials-Top .Button{
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--White-99, #FCFCFD);
+}
+
+.Testimonials-Top .Button a{
+    color: var(--Grey-15, #262626);
+    text-align: center;
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+}
+
+.Testimonials-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.Testimonials-bottom .row{
+    gap: 30px;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.Testimonials-bottom .card{
+    width: calc((100% - 30px) / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 12px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--Absolute-White, #FFF);
+}
+
+.Testimonials-bottom .card .Top{
+    display: flex;
+    padding: 50px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.Testimonials-bottom .card .Top p{
+    color: var(--Grey-30, #4C4C4D);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+}
+
+.Testimonials-bottom .line{
+    width: 560px;
+    height: 1px;
+    background: #F1F1F3;
+}
+
+.Testimonials-bottom .card .row{
+    display: flex;
+    padding: 30px 50px;
+    align-items: center;
+    align-self: stretch;
+    background: var(--White-99, #FCFCFD);
+}
+
+.Testimonials-bottom .left-side{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1 0 0;
+}
+
+.Testimonials-bottom .image{
+    border-radius: 8px;
+    width: 60px;
+    height: 60px;
+}
+
+.Testimonials-bottom .image img{
+    width: 100%;
+    height: 60px;
+}
+
+.Testimonials-bottom span{
+    color: var(--Grey-20, #333);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 27px */
+}
+
+.Testimonials-bottom .Button{
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--White-97, #F7F7F8);
+}
+
+.Testimonials-bottom .Button a{
+    color: var(--Grey-15, #262626);
+    text-align: center;
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+}
+
+.footer-left-side {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    gap: 40px;
+    /* width: auto; */
+}
+
+.Pricing{
+    padding-top: 168px;
+    padding-bottom: 113px;
+}
+
+.Pricing .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+    align-self: stretch;
+}
+
+.Pricing .Pricing-Top .row{
+    gap: 300px;
+    align-items: flex-end;
+    align-self: stretch;
+}
+
+.Pricing-Top .Text{
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    /* flex-grow: 1; */
+}
+
+.Pricing-Top .Text h4{
+    color: var(--Grey-15, #262626);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 72px */
+    align-self: stretch;
+}
+
+.Pricing-Top .Text p{
+    color: var(--Grey-35, #59595A);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    align-self: stretch;
+    
+}
+
+.Pricing-Top .Tab{
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--Absolute-White, #FFF);
+}
+
+.Pricing-Top .Tab .Button-Active{
+    display: flex;
+    padding: 14px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: var(--Orange-50, #FF9500);
+}
+
+.Pricing-Top .Button-Active a{
+    color: var(--Absolute-White, #FFF);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+}
+
+.Pricing-Top .Button{
+    display: flex;
+    padding: 14px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+}
+
+.Pricing-Top .Button a{
+    color: var(--Grey-30, #4C4C4D);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+}
+
+.Pricing-bottom{
+    display: flex;
+    padding: 80px;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: var(--Absolute-White, #FFF);
+}
+
+.Pricing-bottom .card{
+    width: calc((100% - 30px) / 2);
+    display: flex;
+    padding: 50px 30px 30px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    flex: 1 0 0;
+    border-radius: 12px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--White-99, #FCFCFD);
+}
+
+.Pricing-bottom .Text1{
+    display: flex;
+    padding: 12px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 6px;
+    border: 1px solid var(--Orange-90, #FFEACC);
+    background: var(--Orange-97, #FFF9F0);  
+}
+
+.Pricing-bottom .Text1 span{
+    color: var(--Grey-15, #262626);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 169%; /* 37.18px */
+}
+
+.Pricing-bottom .Text2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: stretch;
+}
+
+.Pricing-bottom .Text2 h5{
+    color: var(--Grey-15, #262626);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 73%; /* 58.4px */
+}
+
+.Pricing-bottom .Text2 span{
+    color: var(--Grey-30, #4C4C4D);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 73%; /* 14.6px */
+}
+
+.Pricing-Top .Sub-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.Pricing-bottom .Sub-Container .Top{
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+    border-radius: 14px 14px 0px 0px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--Absolute-White, #FFF);
+}
+
+.Pricing-bottom .Sub-Container .Top h6{
+    color: var(--Grey-15, #262626);
+    text-align: center;
+    /* font-family: Be Vietnam Pro; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 30px */
+    align-self: stretch;
+}
+
+.Pricing-bottom .Item{
+    display: flex;
+    padding: 0px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.Pricing-bottom .Feature-Item{
+    display: flex;
+    padding: 14px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--White-95, #F1F1F3);
+}
+
+.Pricing-bottom .Feature-Item .icon{
+    display: flex;
+    padding: 6px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 6px;
+    background: var(--Orange-95, #FFF4E5);
+}
+
+.Feature-Item .icon1{
+    display: flex;
+    padding: 6px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--White-95, #F1F1F3);
+}
+
+.Pricing-bottom .Feature-Item svg{
+    width: 20px;
+    height: 20px;
+}
+
+.Feature-Item span{
+    /* color: var(--Grey-30, #4C4C4D); */
+    font-family: Be Vietnam Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 27px */
+}
+
+.Pricing-bottom .Sub-Container .Button{
+    display: flex;
+    padding: 20px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 0px 0px 8px 8px;
+    background: var(--Orange-50, #FF9500);
+}
+
+.Pricing-bottom .Sub-Container .Button a{
+    color: var(--Absolute-White, #FFF);
+    text-align: center;
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 27px */
+}
+
+footer{
+    padding: 100px 0 30px 0;
+    background: var(--absolute-white, #FFF);
+}
+
+footer .row{
+    /* gap: 20px;  */
+    align-items: flex-start;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.footer-left-side ,.footer-right-side{
+    /* width: calc((100% - 20px) / 2); */
+    /* background-color: #FF9500; */
+} 
+
+.footer-left-side .logo{
+    display: flex;
+    width: 54px;
+    height: 54px;
+    padding: 7px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--orange-50, #FF9500);
+}
+
+.footer-left-side .logo svg{
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+footer .Button-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Button-container .Button{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    /* flex-wrap: wrap; */
+    border-radius: 6px;
+}
+
+.Button-container .Button svg{
+    width: 24px;
+    height: 24px;
+}
+
+.Button-container .Button a{
+    color: var(--grey-15, #262626);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+.footer-right-side{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+    align-items: flex-start;
+    width: 700px;
+}
+
+.footer-right-side .part1{
+    width: calc(((100% - 30px) / 2) * 2);
+}
+
+.footer-right-side .part1{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.footer-right-side .part1 .footer-item{
+    width: width: calc((100% - 30px) / 2);;
+}
+
+.footer-right-side .footer-item{
+    /* width: calc((100% - 60px) / 3); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    flex: 1 0 0;
+}
+
+.footer-right-side .footer-item h2{
+    color: var(--grey-15, #262626);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+}
+
+.footer-right-side .footer-item nav{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-right-side .footer-item nav a{
+    color: var(--grey-35, #59595A);
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.footer-item .icons{
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.footer-item .icons .icon{
+    display: flex;
+    padding: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--white-95, #F1F1F3);
+    background: var(--white-97, #F7F7F8);
+}
+
+footer .line{
+    width: 1200px;
+    height: 1px;
+    background: #F1F1F3;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer .last{
+    align-self: stretch;
+    text-align: center;
+}
+
+footer .last span{
+    color: var(--grey-40, #656567);
+    text-align: center;
+    /* font-family: Be Vietnam Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+}
+
+
+@media (min-width: 768px) and (max-width: 1399.98px) {
+    body{
+        width: 1440px;
+        height: 7127px;
+    }
+
+    .Benefits-buttom .card .Text p{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 767.98px) {
+    body{
+        width: 390px;
+        height: 10907px;
+    }
+
+    .container{
+        width: calc(100% - 32px);
+        margin: auto;
+    }
+
+    header{
+        padding-top: 0px;
+        padding-bottom: 0;
+    }
+
+    header .row{
+        padding: 14px 0px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        /* border-bottom: 1px solid var(--White-95, #F1F1F3); */
+    }
+
+    header .left-side .row nav{
+        display: none;
+        visibility: hidden;
+    }
+
+    header .left-side .logo{
+        display: flex;
+        width: 40px;
+        height: 40px;
+        padding: 5.185px 5.185px 5.185px 5.186px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        background: var(--Orange-50, #FF9500);
+    }
+
+    header .left-side svg{
+        width: 29.63px;
+        height: 29.63px;
+        flex-shrink: 0;
+    }
+
+    header .right-side{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    header .right-side .Button{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    header .Button a:first-of-type{
+        color: var(--Grey-15, #262626);
+        /* font-family: Be Vietnam Pro; */
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 21px */
+        width: calc((100% - 20px) / 2);
+    }
+    
+    header .Button a:last-of-type{
+        display: flex;
+        padding: 12px 20px;
+        align-items: center;
+        gap: 8px;
+        border-radius: 6px;
+        background: var(--Orange-50, #FF9500);
+        color: var(--Absolute-White, #FFF);
+        /* font-family: Be Vietnam Pro; */
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 21px */
+        width: calc((100% - 20px) / 2);
+    }
+
+    header .right-side svg{
+        display: block;
+        visibility: visible;
+    }
+
+    main .Hero-Section{
+        /* margin: auto; */
+        width: calc(100% - 32px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding-top: 91px;
+        padding-bottom: 30px;
+    }
+    
+    .Hero-Section .Hero-Top{
+        gap: 16px;
+    }
+    
+    .Hero-Top .Sub-Container{
+        position: relative;
+        padding: 14px;
+        border-radius: 8px;
+        align-self: stretch;
+        gap: 10px;
+    }
+    
+    .Sub-Container h1{
+        font-size: 16px;
+    }
+    
+    .Sub-Container h1 span{
+        font-size: 16px;
+    }
+    
+    .Sub-Container .Abstract-Line {
+        left: -10px;
+        top: -20px;
+    }
+    
+    .Sub-Container .icon-container{
+        padding: 12px;
+    }
+    
+    .Hero-Top .Text-Container{
+        padding: 0px 30px;
+        gap: 6px;
+    }
+    
+    .Hero-Button .Button1{
+        border-radius: 6px;              
+        padding: 14px 20px;
+    }
+    
+    .Button1 a{
+        font-size: 14px;
+    }
+    
+    .Hero-Button .Button2{
+        border-radius: 6px;
+        padding: 14px 20px;
+    }
+    
+    .Button2 a{
+        font-size: 14px;
+    }
+
+    .cards .row{
+        padding: 10px;
+        border-radius: 8px;
+        overflow-x: auto;
+    }
+    
+    .cards .card{
+        padding: 20px 30px;
+        border-right: 1px solid #F1F1F3;
+    }
+    
+    .cards .card svg{
+        width: 48px;
+        height: 24px;
+    }
+    
+    /* .cards .line{
+        visibility: hidden;
+    } */
+   
+    main .photo{
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+    
+    .photo .container{
+        display: flex;
+        width: 358px;
+        height: 247px;
+        padding: 100px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: 16px solid var(--White-97, #F7F7F8);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url('../image/image.png'), lightgray 50% / cover no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .photo .container .Button{
+        border: 4px solid rgba(255, 255, 255, 0.30);
+        padding: 10px;
+    }
+    
+    .photo .container .Button svg{
+        width: 34px;
+        height: 34px;
+    }
+    
+    .Benefits .container{
+        gap: 40px;
+        align-items: flex-end;
+    }
+    
+    .Benefits .Benefits-Top .row{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .Benefits-Top .Text{
+        gap: 4px;
+    }
+    
+    .Benefits-Top .Text h4{
+        font-size: 28px;
+    }
+    
+    .Benefits-Top .Text p{
+        font-size: 14px;
+    }
+    
+    .Benefits-Top .Button{
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+    
+    .Benefits-Top .Button a{
+        font-size: 14px;
+    }
+    
+    .Benefits .Benefits-buttom .row{
+        flex-direction: column;
+    }
+    
+    .Benefits-buttom .card6{
+        display: none;
+        visibility: hidden;
+    }
+
+    .Benefits-buttom .card5{
+        display: none;
+        visibility: hidden;
+    }
+
+    .Benefits-buttom .card{
+        padding: 30px;
+        gap: 30px;
+        border-radius: 10px;
+    }
+    
+    .Benefits-buttom .card h2{      
+        font-size: 50px;
+    }
+    
+    .Benefits-buttom .card .Text{
+        gap: 10px;
+    }
+    
+    .Benefits-buttom .card .Text h3{
+        font-size: 20px;
+    } 
+    
+    .Benefits-buttom .card .Text p{
+        font-size: 14px;
+    }
+    
+    .Benefits-buttom .card .Button{
+        padding: 14px;
+        border-radius: 6px;
+    }
+    
+    .Courses{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .Courses .container{
+        align-items: flex-end;
+        gap: 40px;
+    }
+    
+    .Courses .Courses-Top-Section .row{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .Courses-Top-Section .Text{
+        gap: 4px;
+    }
+    
+    .Courses-Top-Section .Text h4{
+        font-size: 28px;
+    }
+    
+    .Courses-Top-Section .Text p{
+        font-size: 14px;
+    }
+    
+    .Courses-Top-Section .Button{
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+    
+    .Courses-Top-Section .Button a{
+        font-size: 14px;
+    }
+    
+    .Courses .Courses-Bottom-Section{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .Courses-Bottom-Section .row{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .Courses-Bottom-Section .card{
+        width: 100%;
+        padding: 24px;
+        gap: 24px;
+        border-radius: 10px;
+    }
+    
+    .Courses-Bottom-Section .card1{
+        width: 100%;
+        padding: 24px;
+        gap: 24px;
+        border-radius: 10px;
+    }
+    
+    .Courses-Bottom-Section .card .Top{
+        gap: 24px;
+    }
+    
+    .Courses-Bottom-Section .card .Top .image{
+        height: 172px;
+        border-radius: 6px;
+    }
+    
+    .Courses-Bottom-Section .card .Top img{
+        width: 100%;
+        height: 172px;
+    }
+    
+    .Courses-Bottom-Section .card1 .Top{
+        gap: 24px;
+    }
+    
+    .Courses-Bottom-Section .card1 .Top .image{
+        height: 172px;
+        border-radius: 6px;
+    }
+    
+    .Courses-Bottom-Section .card1 .Top img{
+        width: 100%;
+        height: 172px;
+    }
+    
+    .Courses-Bottom-Section .Sub-Container{
+        gap: 24px;
+        align-items: flex-start;
+    }
+    
+    .Courses-Bottom-Section .Sub-Container .row{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .Courses-Bottom-Section .Sub-Container .row .right-side{
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .Courses-Bottom-Section .Sub-Container .right-side .part{
+        padding: 8px 14px;
+        border-radius: 6px;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .Courses-Bottom-Section .part span{
+        font-size: 14px;
+    }
+    
+    .Courses-Bottom-Section .Sub-Container .left-side span{
+        font-size: 16px;
+    }
+    
+    .Courses-Bottom-Section .Sub-Container .Text{
+        gap: 10px;
+    }
+    
+    .Courses-Bottom-Section .Sub-Container .Text h5{
+        font-size: 18px;
+    }
+    
+    .Courses-Bottom-Section .Sub-Container .Text p{
+        font-size: 14px;
+    }
+    
+    .Courses-Bottom-Section .Button{
+        padding: 14px 24px;
+        border-radius: 6px;
+    }
+    
+    .Courses-Bottom-Section .Button a{
+        font-size: 14px;
+    }
+
+    .Testimonials .container{
+        align-items: flex-end;
+        gap: 40px;
+    }
+    
+    .Testimonials .Testimonials-Top .row{
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .Testimonials-Top .Text{
+        gap: 4px;
+    }
+    
+    .Testimonials-Top .Text h4{
+        font-size: 28px;
+    }
+    
+    .Testimonials-Top .Text p{
+        font-size: 14px;
+    }
+    
+    .Testimonials-Top .Button{
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
+    
+    .Testimonials-Top .Button a{
+        font-size: 14px;
+    }
+    
+    .Testimonials-bottom{
+        gap: 20px;
+    }
+    
+    .Testimonials-bottom .row{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .Testimonials-bottom .card{
+        width: 100%;    
+        align-self: stretch;
+        border-radius: 10px;
+    }
+    
+    .Testimonials-bottom .card .Top{
+        padding: 30px;
+    }
+    
+    .Testimonials-bottom .card .Top p{
+        font-size: 14px;
+    }
+    
+    .Testimonials-bottom .line{
+        width: 357px;
+    }
+    
+    .Testimonials-bottom .card .row{
+        padding: 20px 30px;
+        flex-direction: row;
+    }
+    
+    .Testimonials-bottom .left-side{
+        gap: 10px;
+    }
+    
+    .Testimonials-bottom .image{
+        border-radius: 6px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .Testimonials-bottom .image img{
+        width: 100%;
+        height: 50px;
+    }
+    
+    .Testimonials-bottom span{
+        font-size: 16px;
+    }
+    
+    .Testimonials-bottom .Button{
+        padding: 14px 16px;
+        border-radius: 6px;
+    }
+    
+    .Testimonials-bottom .Button a{
+        font-size: 14px;
+    }
+
+    .Pricing{
+        padding-top: 50px;
+        padding-bottom: 82px;
+    }
+    
+    .Pricing .container{
+        align-items: flex-end;
+        gap: 40px;
+    }
+    
+    .Pricing .Pricing-Top .row{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .Pricing-Top .Text{
+        gap: 4px;
+    }
+    
+    .Pricing-Top .Text h4{
+        font-size: 28px;
+    }
+    
+    .Pricing-Top .Text p{
+        font-size: 14px;
+    }
+    
+    .Pricing-Top .Tab .Button-Active{
+        padding: 12px 24px;
+    }
+    
+    .Pricing-Top .Button-Active a{
+        font-size: 14px;
+    }
+    
+    .Pricing-Top .Button{
+        padding: 12px 24px;
+    }
+    
+    .Pricing-Top .Button a{
+        font-size: 14px;
+    }
+    
+    .Pricing-bottom{
+        padding: 20px;
+        flex-direction: column;
+    }
+    
+    .Pricing-bottom .card{
+        width: 100%;
+        padding: 30px 20px 20px 20px;
+        gap: 30px;
+    }
+    
+    .Pricing-bottom .Text1{
+        border-radius: 4px;
+        padding: 8px 22px;
+    }
+    
+    .Pricing-bottom .Text1 span{
+        font-size: 16px;
+    }
+    
+    /* .Pricing-bottom .Text2{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        align-self: stretch;
+    } */
+    
+    .Pricing-bottom .Text2 h5{
+        font-size: 50px;
+    }
+    
+    .Pricing-bottom .Text2 span{
+        font-size: 14px;
+    }
+    
+    /* .Pricing-Top .Sub-Container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+    } */
+    
+    .Pricing-bottom .Sub-Container .Top{
+        border-radius: 10px 10px 0px 0px;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .Pricing-bottom .Sub-Container .Top h6{
+        font-size: 18px;
+    }
+    
+    /* .Pricing-bottom .Item{
+        display: flex;
+        padding: 0px 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+    } */
+    
+    .Pricing-bottom .Feature-Item{
+        border-radius: 6px;       
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .Pricing-bottom .Feature-Item .icon{
+        border-radius: 4px;
+        padding: 4px;
+    }
+    
+    .Feature-Item .icon1{
+        border-radius: 4px;
+        padding: 4px;
+    }
+    
+    .Pricing-bottom .Feature-Item svg{
+        width: 16px;
+        height: 16px;
+    }
+    
+    .Feature-Item span{
+        font-size: 12px;
+    }
+    
+    .Pricing-bottom .Sub-Container .Button{
+        padding: 18px 24px;
+    }
+    
+    .Pricing-bottom .Sub-Container .Button a{
+        font-size: 14px;
+    }
+
+    footer{
+        display: flex;
+        padding: 50px 20px 24px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    footer .row{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+    }
+    
+    .footer-left-side ,.footer-right-side{
+        /* width: calc((100% - 20px) / 2); */
+        /* background-color: #FF9500; */
+    }
+    
+    .footer-left-side {
+        align-items: flex-start;
+        gap: 30px;
+        align-self: stretch;
+    }
+    
+    .footer-left-side .logo{
+        width: 44px;
+        height: 44px;
+        padding: 5.704px 5.703px 5.703px 5.704px;
+        border-radius: 6px;
+    }
+    
+    .footer-left-side .logo svg{
+        width: 32.593px;
+        height: 32.593px;
+    }
+    
+    footer .Button-container{
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 12px;
+        align-self: stretch;
+        flex-wrap: wrap;
+    }
+    
+    .Button-container .Button a{
+        font-size: 15px;
+    }
+    
+    .footer-right-side{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+        width: 350px;
+    }
+
+    .footer-right-side .part1{
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        align-self: stretch;
+    }
+
+    .footer-right-side .part2 .footer-item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        align-self: stretch;
+    }
+
+    .footer-right-side .part1 .footer-item:first-of-type{
+        display: flex;
+        width: 128px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .footer-right-side .part1 .footer-item:last-of-type{
+        display: flex;
+        width: 205px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .footer-right-side .footer-item h2{
+        font-size: 18px;
+    }
+    
+    .footer-right-side .part1 .footer-item nav{
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        align-self: stretch;
+    }
+    
+    .footer-right-side .part1 .footer-item nav a{
+        color: var(--grey-35, #59595A);
+        /* font-family: Be Vietnam Pro; */
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    
+    .footer-item .icons{
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+    }
+    
+    .footer-item .icons .icon{
+        border-radius: 6px;
+        padding: 12px;
+    }
+    
+    footer .line{
+        width: 335px;
+        height: 1px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    footer .last{
+        align-self: stretch;
+        text-align: center;
+    }
+    
+    footer .last span{
+        font-size: 14px;
+        font-style: normal;
+    }
+    
+    
+    
+}
+
+
+
+
+
+
+
+
